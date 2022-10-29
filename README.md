@@ -1,52 +1,46 @@
 # Project 7 - WordPress Pen Testing
 
-Time spent:4 hours spent in total
+Time spent: 4 hours spent in total
 
 > Objective: Find, analyze, recreate, and document three vulnerabilities affecting an old version of WordPress
 
 ## Pen Testing Report
 
-### 1. CSRF
+### 1. Cross-Site Request Forgery (CSRF):-
 
-- Summary: 
-  - Vulnerability types:
-  - Tested in version: 4.2
-  - Fixed in version: 
+  - This type of attack forces an end user to execute unwanted actions on a web application in which they’re currently authenticated.
+  - Tested in version: 2.8 - 4.7
+  - Fixed in version: 4.1.14
   
 - GIF Walkthrough: 
 <img src="csrf.gif" alt="Username Enumeration exploit">
-- [ ] Steps to recreate: 
-- [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+- Image:-
+<img src="csrf.png" alt="Username Enumeration exploit">
+- Command used to find the exploit:- wpscan --url http://127.0.0.1:8080 --api-token (your api token)
   
 ### 2. Username Enumeration
 
-- Summary: 
-  - Vulnerability types:
-  - Tested in version: 4.2
-  - Fixed in version: 
+  - This is a common vulnerability which occurs when an attacker can determine if usernames are valid or not.
+  
 - GIF Walkthrough:
 <img src="username_enumeration.gif" alt="Username Enumeration exploit">
-- [ ] Steps to recreate: 
-- [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+- Image:- 
+<img src="user.png" alt="Username Enumeration exploit">
+- Command used to find the exploit:- wpscan --url http://127.0.0.1:8080 --api-token YOUR_TOKEN -e u vp
+- Affected source code: http://127.0.0.1:8080/wp-login.php
 
 ### 3. Password enumeration
 
-- Summary: 
-  - Vulnerability types:
-  - Tested in version: 4.2
-  - Fixed in version: 
+  -This is a common vulnerability which occurs when an attacker can determine if usernames are valid or not.
+  
 - GIF Walkthrough: 
 <img src="password_enumeration.gif" alt="Username Enumeration exploit">
-- [ ] Steps to recreate: 
-- [ ] Affected source code:
-  - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+- Image:
+<img src="password.png" alt="Username Enumeration exploit">
 
-
-## Assets
-
-List any additional assets, such as scripts or files
+- Command used to find the exploit:-  wpscan --url http://127.0.0.1:8080 --usernames username.txt --passwords password.txt
+- Create a list of usernames and passwords and store as username.txt and password.txt respectively
+- Affected source code: http://127.0.0.1:8080/wp-login.php
 
 ## Resources
 
@@ -56,13 +50,9 @@ List any additional assets, such as scripts or files
 GIFs created with  ...
 [ScreenToGif](https://www.screentogif.com/) 
 
-## Notes
-
-Describe any challenges encountered while doing the work
-
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2022 Arushi
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
