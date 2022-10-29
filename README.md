@@ -14,7 +14,7 @@ Time spent: 4 hours spent in total
   
 - GIF Walkthrough: 
 <img src="csrf.gif" alt="Username Enumeration exploit">
-- Image:-
+- Image:
 <img src="csrf.png" alt="Username Enumeration exploit">
 - Command used to find the exploit:- wpscan --url http://127.0.0.1:8080 --api-token (your api token)
   
@@ -24,7 +24,7 @@ Time spent: 4 hours spent in total
   
 - GIF Walkthrough:
 <img src="username_enumeration.gif" alt="Username Enumeration exploit">
-- Image:- 
+- Image:
 <img src="user.png" alt="Username Enumeration exploit">
 - Command used to find the exploit:- wpscan --url http://127.0.0.1:8080 --api-token YOUR_TOKEN -e u vp
 - Affected source code: http://127.0.0.1:8080/wp-login.php
