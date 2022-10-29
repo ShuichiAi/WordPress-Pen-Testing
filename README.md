@@ -8,33 +8,37 @@ Time spent:4 hours spent in total
 
 ### 1. CSRF
 
-- [ ] Summary: 
+- Summary: 
   - Vulnerability types:
-  - Tested in version:
+  - Tested in version: 4.2
   - Fixed in version: 
-- [ ] GIF Walkthrough: 
+  
+- GIF Walkthrough: 
+<img src="csrf.gif" alt="Username Enumeration exploit">
 - [ ] Steps to recreate: 
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
   
 ### 2. Username Enumeration
 
-- [ ] Summary: 
+- Summary: 
   - Vulnerability types:
-  - Tested in version:
+  - Tested in version: 4.2
   - Fixed in version: 
-- [ ] GIF Walkthrough: 
+- GIF Walkthrough:
+<img src="username_enumeration.gif" alt="Username Enumeration exploit">
 - [ ] Steps to recreate: 
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
 ### 3. Password enumeration
 
-- [ ] Summary: 
+- Summary: 
   - Vulnerability types:
-  - Tested in version:
+  - Tested in version: 4.2
   - Fixed in version: 
-- [ ] GIF Walkthrough: 
+- GIF Walkthrough: 
+<img src="password_enumeration.gif" alt="Username Enumeration exploit">
 - [ ] Steps to recreate: 
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
@@ -50,10 +54,7 @@ List any additional assets, such as scripts or files
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 
 GIFs created with  ...
-<!-- Recommended GIF Tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+[ScreenToGif](https://www.screentogif.com/) 
 
 ## Notes
 
